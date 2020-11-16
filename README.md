@@ -1,5 +1,5 @@
 # automate-workflow
-Create a parent folder and subfolder based on the company name and job title, and copy a fresh copy of your cover letter and resume.
+Creates the approiate folders and copies a fresh copy of your cover letter and resume. 
 
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)

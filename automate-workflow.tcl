@@ -11,12 +11,12 @@ proc getJobinfo {question} {
 
 proc isSubmissionValid {parameter message} {
     if {$parameter eq ""} {
-		throw {Value Empty} "$message cannot be empty!"
+    	throw {Value Empty} "$message cannot be empty!"
     }	
 }
 
 proc getLastestSubmissionFile {cover_letter_resume submission_parent} {
-	set folder [lindex [lsort [glob -directory $submission_parent -type d *]] end]
+    set folder [lindex [lsort [glob -directory $submission_parent -type d *]] end]
     return [lindex [glob -directory $folder *[file extension $cover_letter_resume]] end]
 }
 
@@ -25,29 +25,28 @@ proc createSubmissionFolder {source destination} {
     file mkdir $destination
     puts "Copying $source to $destination"
     file copy $source $destination
-	return $destination
+    return $destination
 }
 
 proc createApplicationFolder {cv submission_path} {
 	
-	set submission_parent [file dirname $submission_path]
-	set submission_folder ""
+    set submission_parent [file dirname $submission_path]
+    set submission_folder ""
 	
-	if {[file exists $submission_parent]} {
-		set latest_submission_file [getLastestSubmissionFile $cv $submission_parent]
-	    set submission_folder [createSubmissionFolder $latest_submission_file $submission_path]
-	} else {
-	    set submission_folder [createSubmissionFolder $cv $submission_path]
+    if {[file exists $submission_parent]} {
+        set latest_submission_file [getLastestSubmissionFile $cv $submission_parent]
+	set submission_folder [createSubmissionFolder $latest_submission_file $submission_path]
+    } else {
+	set submission_folder [createSubmissionFolder $cv $submission_path]
 	} 
-	return $submission_folder
+    return $submission_folder
 }
 
 proc writeFilePathtoCoverLetterResume {path_to_fresh_cover_letter_resume} {
-
-	set file_name "job.txt"
-	set fileid [open $file_name "w"]
-	puts -nonewline $fileid $path_to_fresh_cover_letter_resume
-	close $fileid
+    set file_name "job.txt"
+    set fileid [open $file_name "w"]
+    puts -nonewline $fileid $path_to_fresh_cover_letter_resume
+    close $fileid
 }
 
 set systemTime [clock seconds]
@@ -57,12 +56,11 @@ set yearmonthday [clock format $systemTime -format %Y%m%d-%H%M%S]
 set coverletterresume "cover_letter_resume.odt"
 
 try {
-	
-	set company_name [getJobinfo "Company Name"]
-  set position [getJobinfo "Position"]
-	set submission_path [file join $company_name $position $yearmonthday]
-	set fresh_cover_letter_resume [createApplicationFolder $coverletterresume $submission_path]
-	writeFilePathtoCoverLetterResume [file join $fresh_cover_letter_resume $coverletterresume]
+    set company_name [getJobinfo "Company Name"]
+    set position [getJobinfo "Position"]
+    set submission_path [file join $company_name $position $yearmonthday]
+    set fresh_cover_letter_resume [createApplicationFolder $coverletterresume $submission_path]
+    writeFilePathtoCoverLetterResume [file join $fresh_cover_letter_resume $coverletterresume]
 	
 } trap {Value Empty} {errormessage} {
    puts "$errormessage"

@@ -1,5 +1,5 @@
 # automate-workflow
-Creates the approiate folders and copies a fresh copy of your cover letter and resume. 
+Creates the appropriate folders and copies a fresh copy of your cover letter and resume.
 
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)

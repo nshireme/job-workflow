@@ -75,6 +75,6 @@ C:\Users\nshireme\Documents\Work\job.txt, Delete (Y/N)? y
 **Example**:
 ```tcl
 # Path to our cover letter and resume.
-set coverletterresume "cover_letter_resume.odt"
+set coverletterresume "cover_letter_resume.odt" < -- change this, but leave the quotes.
 ```
-2. Save and exit the editor.
+2. Save and close the editor.

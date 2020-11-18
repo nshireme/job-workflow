@@ -45,6 +45,14 @@ Company Name: Microsoft
 Position: Software Engineer
 ```
 
+4. The script creates 3 folders, the Company Name as the parent, the Position as the subfolder, and another subfolder labelled with current date and time. It the copies the base cover letter and resume to the new folder.
+
+```batch
+Creating Microsoft/Software Engineer/20201118-124252 folder.
+Copying cover_letter_resume.odt to Microsoft/Software Engineer/20201118-124252
+C:\Users\nshireme\Documents\Work\automate-workflow.tcl exiting.
+```
+
 
 #### <a name="cleaning-up"></a>Cleaning Up
 #### <a name="configuration"></a>Configuration

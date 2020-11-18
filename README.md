@@ -61,10 +61,14 @@ Starting Microsoft/Software Engineer/20201118-124252/cover_letter_resume.odt
 ```
 
 #### <a name="cleaning-up"></a>Cleaning Up
-1. You'll notice that in your `Work` folder, a `job.txt` appeared. The `automate-workflow.tcl` script wrote the file path to your newly created folders to a text file so the run.bat can open your cover letter ane resume. You don't have to delete this file manually, the `run.bat` can do it for you.
+1. You'll notice that in your `Work` folder, a `job.txt` appeared. The `automate-workflow.tcl` script wrote the file path to your newly created folders to a text file so the `run.bat` can open your cover letter ane resume. You don't have to delete this file manually, the `run.bat` can do it for you.
 
 **Example**:
 ```batch
 C:\Users\nshireme\Documents\Work\job.txt, Delete (Y/N)? y
 ```
 #### <a name="configuration"></a>Configuration
+
+**Changing the filename**
+1. Open the `automate-workflow.tcl` in any text editor, locate the `coverletterresume` variable, and change the filename. **Do not** change anything else.
+2. Save and exit the editor.

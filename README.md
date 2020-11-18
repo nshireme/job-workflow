@@ -33,7 +33,7 @@ C:\Users\nshireme>cd Documents\Work
 
 **Example**:
 ```batch
-C:\Users\nshireme>start run.bat
+C:\Users\nshireme\Documents\Work>start run.bat
 ```
 
 3. The `run.bat` script starts the `automate-workflow.tcl` script, and asks you for the `Company Name` and `Position`.

@@ -42,15 +42,14 @@ proc createApplicationFolder {cv submission_path} {
     return $submission_folder
 }
 
-proc writeFilePathtoCoverLetterResume {path_to_fresh_cover_letter_resume} {
-    set file_name "job.txt"
-    set fileid [open $file_name "w"]
+proc writeFilePathtoCoverLetterResume {fileid path_to_fresh_cover_letter_resume} {
     puts -nonewline $fileid $path_to_fresh_cover_letter_resume
-    close $fileid
 }
 
 set systemTime [clock seconds]
 set yearmonthday [clock format $systemTime -format %Y%m%d-%H%M%S]
+set file_name "job.txt"
+set fileid [open $file_name "w"]
 
 # Path to our cover letter and resume.
 set coverletterresume "cover_letter_resume.odt"
@@ -60,8 +59,7 @@ try {
     set position [getJobinfo "Position"]
     set submission_path [file join $company_name $position $yearmonthday]
     set fresh_cover_letter_resume [createApplicationFolder $coverletterresume $submission_path]
-    writeFilePathtoCoverLetterResume [file join $fresh_cover_letter_resume $coverletterresume]
-	
+    writeFilePathtoCoverLetterResume fileid [file join $fresh_cover_letter_resume $coverletterresume]	
 } trap {Value Empty} {errormessage} {
    puts "$errormessage"
 } trap {TCL OPERATION GLOB NOMATCH} {errormessage} {
@@ -69,5 +67,6 @@ try {
 } trap {POSIX ENOENT} {errormessage} {
    puts "$errormessage"
 } finally {
+   close $fileid
    puts "$argv0 exiting."
 }

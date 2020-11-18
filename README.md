@@ -55,5 +55,16 @@ Press any key to continue . . .
 ```
 5. Pushing any key to continue will open the file in your default word processor. 
 
+**Example**:
+```batch
+Starting Microsoft/Software Engineer/20201118-124252/cover_letter_resume.odt
+```
+
 #### <a name="cleaning-up"></a>Cleaning Up
+1. You'll notice that in your `Work` folder, a `job.txt` appeared. The `automate-workflow.tcl` script wrote the file path to your newly created folders to a text file so the run.bat can open your cover letter ane resume. You don't have to delete this file manually, the `run.bat` can do it for you.
+
+**Example**:
+```batch
+C:\Users\Nash\Documents\Work\job.txt, Delete (Y/N)? y
+```
 #### <a name="configuration"></a>Configuration

@@ -29,6 +29,13 @@ C:\Users\nshireme\Documents\Work\cover_letter_resume_base.odt
 C:\Users\nshireme>cd Documents\Work
 ```
 
+2. Run the `run.bat` script.
+
+**Example**:
+```batch
+C:\Users\nshireme>start run.bat
+```
+
 
 #### <a name="cleaning-up"></a>Cleaning Up
 #### <a name="configuration"></a>Configuration

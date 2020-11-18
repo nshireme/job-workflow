@@ -59,7 +59,7 @@ try {
     set position [getJobinfo "Position"]
     set submission_path [file join $company_name $position $yearmonthday]
     set fresh_cover_letter_resume [createApplicationFolder $coverletterresume $submission_path]
-    writeFilePathtoCoverLetterResume fileid [file join $fresh_cover_letter_resume $coverletterresume]	
+    writeFilePathtoCoverLetterResume $fileid [file join $fresh_cover_letter_resume $coverletterresume]	
 } trap {Value Empty} {errormessage} {
    puts "$errormessage"
 } trap {TCL OPERATION GLOB NOMATCH} {errormessage} {

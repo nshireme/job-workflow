@@ -45,7 +45,7 @@ Company Name: Microsoft
 Position: Software Engineer
 ```
 
-4. The script creates 3 folders, the Company Name as the parent, the Position as the subfolder, and another subfolder labelled with current date and time. It the copies the base cover letter and resume to the new folder.
+4. The script creates 3 folders, the `Company Name` as the parent, the `Position` as the subfolder, and another subfolder labelled with current date and time. It copies the base cover letter and resume to the new folder, and exits. 
 
 ```batch
 Creating Microsoft/Software Engineer/20201118-124252 folder.

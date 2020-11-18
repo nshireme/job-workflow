@@ -10,7 +10,7 @@ pause
 
 set /p file_path=<"%job_file%"
 echo Starting %file_path%
-start /wait "" "%file_path%"
+start "%file_path%"
 del /p "%job_file%"
 
 exit /b

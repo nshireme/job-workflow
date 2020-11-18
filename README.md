@@ -51,8 +51,9 @@ Position: Software Engineer
 Creating Microsoft/Software Engineer/20201118-124252 folder.
 Copying cover_letter_resume.odt to Microsoft/Software Engineer/20201118-124252
 C:\Users\nshireme\Documents\Work\automate-workflow.tcl exiting.
+Press any key to continue . . .
 ```
-
+5. Pushing any key to continue will open the file in your default word processor. 
 
 #### <a name="cleaning-up"></a>Cleaning Up
 #### <a name="configuration"></a>Configuration

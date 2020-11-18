@@ -21,7 +21,14 @@ C:\Users\nshireme\Documents\Work\run.bat
 C:\Users\nshireme\Documents\Work\automate-workflow.tcl
 C:\Users\nshireme\Documents\Work\cover_letter_resume_base.odt
 ```
-
 #### <a name="running-the-script"></a>Running the Script
+1. Open `cmd.exe` and change the directory to your `Work` folder.
+
+**Example**:
+```batch
+C:\Users\nshireme>cd Documents\Work
+```
+
+
 #### <a name="cleaning-up"></a>Cleaning Up
 #### <a name="configuration"></a>Configuration

@@ -65,6 +65,6 @@ Starting Microsoft/Software Engineer/20201118-124252/cover_letter_resume.odt
 
 **Example**:
 ```batch
-C:\Users\Nash\Documents\Work\job.txt, Delete (Y/N)? y
+C:\Users\nshireme\Documents\Work\job.txt, Delete (Y/N)? y
 ```
 #### <a name="configuration"></a>Configuration

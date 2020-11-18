@@ -73,7 +73,7 @@ C:\Users\nshireme\Documents\Work\job.txt, Delete (Y/N)? y
 1. Open the `automate-workflow.tcl` in any text editor, locate the `coverletterresume` variable, and change the filename. **Do not** change anything else.
 
 **Example**:
-```tcl
+```Tcl
 # Path to our cover letter and resume.
 set coverletterresume "cover_letter_resume.odt" # < -- change this, but leave the quotes.
 ```

@@ -36,11 +36,11 @@ C:\Users\nshireme>cd Documents\Work
 C:\Users\nshireme>start run.bat
 ```
 
-3. The run.bat script starts the `automate-workflow.tcl` script, and asks you for the `Company Name` and `Position`.
+3. The `run.bat` script starts the `automate-workflow.tcl` script, and asks you for the `Company Name` and `Position`.
 
 **Example**:
 ```batch
-Running C:\Users\Nash\Documents\Work\automate-workflow.tcl
+Running C:\Users\nshireme\Documents\Work\automate-workflow.tcl
 Company Name: Microsoft
 Position: Software Engineer
 ```
